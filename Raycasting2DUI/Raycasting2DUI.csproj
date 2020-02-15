@@ -94,5 +94,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Raycasting2DLibrary\Raycasting2DLibrary.csproj">
+      <Project>{ce4f25c2-7193-40c5-bfc8-532e7a31f4a6}</Project>
+      <Name>Raycasting2DLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
