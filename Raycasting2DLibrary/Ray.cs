@@ -18,7 +18,7 @@ namespace Raycasting2DLibrary
             direction = Vector2.Normalize(direction);
         }
 
-        public bool cast(Boundary wall, Vector2 point)
+        public bool cast(Boundary wall, ref Vector2 point)
         {
             float x1 = wall.a.X;
             float y1 = wall.a.Y;

@@ -5,22 +5,28 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Raycasting2DUI"
         mc:Ignorable="d"
+        Background="Black"
         Title="Raycasting2D" Height="600" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="10"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="10"/>
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
             <RowDefinition Height="10"/>
+            <RowDefinition Height="5*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="10"/>
         </Grid.RowDefinitions>
 
-        <Canvas x:Name="canvas" Background="Black" Grid.Column="1" Grid.Row="1">
-            
-        </Canvas>
+        <Button x:Name="startButton" Grid.Column="2" Grid.Row="2" Margin="20,10,20,8" FontSize="40" Click="startButton_Click">
+           Start 
+        </Button>
+
+        <Canvas x:Name="canvas" Background="Black" Grid.Column="1" Grid.ColumnSpan="3" Grid.Row="1" MouseMove="canvas_MouseMove"/>
     </Grid>
 </Window>
